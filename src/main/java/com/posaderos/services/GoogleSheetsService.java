@@ -78,7 +78,7 @@ public class GoogleSheetsService {
             return Collections.singletonList("R1C" + numColumn + ":R".concat(String.valueOf(row))
                     .concat("C" + numColumn).concat(String.valueOf(numColumn + 1)));
         } catch (final Exception e) {
-            return List.of();
+            return null;
         }
     }
 }
