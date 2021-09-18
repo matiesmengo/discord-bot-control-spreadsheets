@@ -42,6 +42,7 @@ public class GoogleAuthorizationConfig {
 
         final LocalServerReceiver localServerReceiver = new LocalServerReceiver.Builder()
                 .setHost("https://bot-posaderos.herokuapp.com")
+                .setPort(8888)
                 .build();
 
         return new AuthorizationCodeInstalledApp(flow, localServerReceiver)
